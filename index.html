@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacje o jedzeniu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a9db5957d7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div>
+        <div class="description">
+            <div class="description__box wrapper">
+                <p class="description__title">Informacje o jedzeniu</p>
+            </div>
+        </div>
+        <div class="food" id="food">
+            <div class="food__box wrapper">
+                <div class="food__menu">
+                    <p class="food__text">Kategorie</p>
+                    <button onclick="showInfo('first-tab')" class="food__btn food__btn--active"
+                        data-id="first-tab">Wszystko</button>
+                    <button onclick="showInfo('second-tab')" class="food__btn" data-id="second-tab">Owoce i
+                        warzywa</button>
+                    <button onclick="showInfo('third-tab')" class="food__btn" data-id="third-tab">Produkty
+                        zbożowe</button>
+                    <button onclick="showInfo('fourth-tab')" class="food__btn" data-id="fourth-tab">Nabiał</button>
+                    <button onclick="showInfo('fifth-tab')" class="food__btn" data-id="fifth-tab">Mięso i ryby</button>
+                    <button onclick="showInfo('sixth-tab')" class="food__btn" data-id="sixth-tab">Orzechy</button>
+                </div>
+                <div class="food__list">
+                    <div class="food__search-box"><input type="text" class="food__search" placeholder="Szukaj...">
+                        <div class="food__search-icon-box"><i class="fas fa-search"></i><i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <p class="food__error">Brak wyników.</p>
+                    <div class="food__section food__section--active" id="first-tab">
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-apple-whole"></i><span>Jabłko</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-apple-whole"></i><span>Banan</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-seedling"></i><span>Płatki
+                                    owsiane</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-seedling"></i><span>Ryż biały</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-cheese"></i><span>Mleko</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-cheese"></i><span>Ser żółty</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-cheese"></i><span>Serek wiejski</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-drumstick-bite"></i><span>Kurczak</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-drumstick-bite"></i><span>Dorsz</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-jar"></i><span>Masło
+                                    orzechowe</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-jar"></i><span>Orzeszki ziemne</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food__section" id="second-tab">
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-apple-whole"></i><span>Jabłko</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-apple-whole"></i><span>Banan</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food__section" id="third-tab">
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-seedling"></i><span>Płatki
+                                    owsiane</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-seedling"></i><span>Ryż biały</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food__section" id="fourth-tab">
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-cheese"></i><span>Mleko</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-cheese"></i><span>Ser żółty</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-cheese"></i><span>Serek wiejski</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food__section" id="fifth-tab">
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-drumstick-bite"></i><span>Kurczak</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-drumstick-bite"></i><span>Dorsz</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food__section" id="sixth-tab">
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-jar"></i><span>Masło
+                                    orzechowe</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                        <div class="food__item">
+                            <button class="food__item-btn"><i class="fa-solid fa-jar"></i><span>Orzeszki ziemne</span></button>
+                            <div class="food__item-info">
+                                <p class="food__item-info-text">Opis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="food__right">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
