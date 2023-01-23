@@ -90,13 +90,13 @@ body {
 		}
 
 		&--active {
-			color: #141518;
-			background-color: #00FF7F;
+			color: #fff;
+			background-color: #3F00FF;
 			transition: opacity 0.3s;
 
 			&:hover {
-				color: #141518;
-				background-color: #00FF7F;
+				color: #fff;
+				background-color: #3F00FF;
 				opacity: 0.8;
 			}
 		}

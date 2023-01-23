@@ -106,15 +106,15 @@ body {
 }
 
 .food__btn--active {
-  color: #141518;
-  background-color: #00FF7F;
+  color: #fff;
+  background-color: #3F00FF;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 
 .food__btn--active:hover {
-  color: #141518;
-  background-color: #00FF7F;
+  color: #fff;
+  background-color: #3F00FF;
   opacity: 0.8;
 }
 
