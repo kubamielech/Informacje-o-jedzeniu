@@ -25,7 +25,7 @@ body {
 }
 
 .description {
-  margin: 7em 1em 0;
+  margin: 1em;
 }
 
 .description__box {
@@ -33,7 +33,7 @@ body {
 }
 
 .description__title {
-  margin-top: 2em;
+  margin-top: 1em;
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: bold;
